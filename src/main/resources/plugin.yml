@@ -1,0 +1,8 @@
+name: XInput
+version: '${version}'
+main: top.meown.xdragon.input.main
+api-version: 1.16
+commands:
+  testopen:
+    usage: "<unknown>"
+    description: "<unknown>"
