@@ -12,6 +12,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import top.meown.xdragon.core.utils.MessageManager;
 import top.meown.xdragon.core.utils.lambda.Parameter1;
+import top.meown.xdragon.input.utils;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -54,9 +55,9 @@ public class IntegerInput {
 
             switch (e.getSlot()){
                 //inputs
-                case 1: value[0]-=1;
-                case 2: value[0]=defaultValue;
-                case 3: value[0]+=1;
+                case 1: value[0]-=1;InventoryUtil.updateInventoryName(player, title + ": " + value[0]);break;
+                case 2: value[0]=defaultValue;InventoryUtil.updateInventoryName(player, title + ": " + value[0]);break;
+                case 3: value[0]+=1;InventoryUtil.updateInventoryName(player, title + ": " + value[0]);break;
 
                 //End of input
                 case 6:
