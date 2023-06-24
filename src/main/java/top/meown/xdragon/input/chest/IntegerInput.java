@@ -12,7 +12,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import top.meown.xdragon.core.utils.MessageManager;
 import top.meown.xdragon.core.utils.lambda.Parameter1;
-import top.meown.xdragon.input.utils;
+import top.meown.xdragon.input.utils.InventoryUtil;
 
 import java.util.ArrayList;
 import java.util.HashMap;
