@@ -13,10 +13,10 @@ public final class main extends JavaPlugin {
         getLogger().info("Ciallo World.");
         // Plugin startup logic
         getCommand("testopen").setExecutor((commandSender, command, s, args)->{
-            if (args.length != 2){return false;}
+            if (args.length != 4){return false;}
 
             Player p = (Player) commandSender;
-            IntegerInput.get(p, (Integer v)-> commandSender.sendMessage("IV: " + v), args[0], Integer.parseInt(args[1]));
+            IntegerInput.get(p, (Integer v)-> commandSender.sendMessage("IV: " + v), args[0], Integer.parseInt(args[1]), Integer.parseInt(args[2]), Integer.parseInt(args[3]));
 
             return true;
         });
